@@ -26,3 +26,19 @@ doge.printFavFood();
 
 //3
 
+const recipes = {
+    ingredients: {
+        butter: "butter",
+        sugar: "sugar",
+        flour: "flour"
+    },
+    printRecipe(){
+        return Object.values(this.ingredients);
+    }
+};
+recipes.ingredients.ginger = "ginger";
+recipes.ingredients.sugar = "brown sugar";
+console.log(recipes.ingredients);
+console.log(recipes.printRecipe())
+
+
